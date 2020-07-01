@@ -16,7 +16,7 @@ public class Mattomatic {
 
     File blueprintFile;
 
-    String workingDirectory = "./";
+    String workingDirectory = "./images";
 
     ArrayList<ImageButton> imageButtons = new ArrayList<ImageButton>();
 
