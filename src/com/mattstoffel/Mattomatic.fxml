@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.mattstoffel.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" style="-fx-base: #00060f;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mattstoffel.Mattomatic">
+    <bottom>
+       <DisplayImageList fx:id="displayImageList" orientation="HORIZONTAL" prefHeight="200.0" />
+    </bottom>
+    <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#menuOpenAction" text="Open" />
+                <MenuItem disable="true" mnemonicParsing="false" onAction="#menuSaveAs" text="Save As..." />
+                <MenuItem mnemonicParsing="false" onAction="#menuViewAction" text="View In Browser" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+    </top>
+    <center>
+        <StackPane fx:id="stackPane" alignment="CENTER">
+            <ImageView fx:id="imageView" fitHeight="560" fitWidth="1400" onMousePressed="#blueprintMousePressed" onMouseDragged="#blueprintMouseDragged" pickOnBounds="true" preserveRatio="true" />
+        </StackPane>
+    </center>
+   <right>
+<!--      <VBox alignment="CENTER_RIGHT" spacing="30.0" BorderPane.alignment="CENTER">-->
+<!--         <children>-->
+<!--            <ToggleButton mnemonicParsing="false" text="moveToggle" />-->
+<!--            <ToggleButton mnemonicParsing="false" text="rotateToggle" />-->
+<!--            <ToggleButton mnemonicParsing="false" text="deleteToggle" />-->
+<!--         </children>-->
+<!--         <BorderPane.margin>-->
+<!--            <Insets top="20.0" />-->
+<!--         </BorderPane.margin>-->
+<!--      </VBox>-->
+   </right>
+</BorderPane>
