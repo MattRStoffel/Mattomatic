@@ -16,7 +16,7 @@ public class Mattomatic {
 
     File blueprintFile;
 
-    String workingDirectory = "./";
+    String workingDirectory = "./images";
 
     ArrayList<ImageButton> imageButtons = new ArrayList<ImageButton>();
 
@@ -114,7 +114,7 @@ public class Mattomatic {
     @FXML
     private void blueprintMousePressed() {
         imageView.setOnMousePressed(click -> {
-            // load an image and create new imageButton objet using the mouse presses and dragged events
+            // load an image and create new imageButton object using the mouse presses and dragged events
             try {
                 Image image = new Image(new FileInputStream(workingDirectory + "/" + displayImageList.getSelectionModel().getSelectedItem()));
                 String selectedImage = displayImageList.getSelectionModel().getSelectedItem().toString();
