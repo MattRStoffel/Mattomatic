@@ -15,6 +15,7 @@ public class HTMLFactory {
 
     String title = "Mattomatic";
     String fileName = "index.html";
+    String buttonImageLocation = "images/myButton.png";
 
     public HTMLFactory(String fileName, String title) {
         this.fileName = fileName;
@@ -121,7 +122,7 @@ public class HTMLFactory {
                             "    	data-toggle=\"modal\" data-target=\"#modal" +
                             number + "\">\r\n    	" +
 
-                            "<image src=\"images\\pie-chart.svg\" style=\"width: 1.2rem; height: 1.2rem;\"></image>" +
+                            "<image src=\"" + buttonImageLocation + "\" style=\"width: 1.2rem; height: 1.2rem;\"></image>" +
 
                             "\r\n    </a>\r\n\n" +
                             "    <div class=\"modal fade\" id=\"modal"+ number +"\" role=\"dialog\">\r\n" +
@@ -155,7 +156,7 @@ public class HTMLFactory {
                             "    	data-toggle=\"modal\" data-target=\"#modal" +
                             number + "\">\r\n    	" +
 
-                            "<image src=\"images\\pie-chart.svg\" style=\"width: 1.2rem; height: 1.2rem;\"></image>" +
+                            "<image src=\"" + buttonImageLocation + "\" style=\"width: 1.2rem; height: 1.2rem;\"></image>" +
 
                             "\r\n    </a>\r\n\n" +
                             "    <div class=\"modal fade\" id=\"modal"+ number +"\" role=\"dialog\">\r\n" +
