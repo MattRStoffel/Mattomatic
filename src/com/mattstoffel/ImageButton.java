@@ -30,7 +30,7 @@ public class ImageButton extends Button {
         this.name = name;
 
         this.setOnMousePressed(click -> {
-            if(click.isAltDown()){
+            if(click.isControlDown()){
                 try {
                     showDisplayImage();
                 } catch (IOException e) {
@@ -51,7 +51,7 @@ public class ImageButton extends Button {
                 this.setRotate(-Math.toDegrees(Math.atan2(drag.getSceneX() - x, drag.getSceneY() - y)) - 135);
             }else {
                 this.setTranslateX(drag.getSceneX()-(this.getScene().getWidth()/2));
-                this.setTranslateY(drag.getSceneY()-((this.getScene().getHeight()/2) - (heightAdjustment/2)));
+                this.setTranslateY(drag.getSceneY()-((this.getScene().getHeight()/2)));
             }
         });
 

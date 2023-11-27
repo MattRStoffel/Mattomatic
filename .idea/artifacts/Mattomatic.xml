@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="Mattomatic">
+    <output-path>$PROJECT_DIR$/out/artifacts/Mattomatic</output-path>
+    <root id="root">
+      <element id="archive" name="Mattomatic.jar">
+        <element id="module-output" name="Mattomatic" />
+      </element>
+    </root>
+  </artifact>
+</component>
